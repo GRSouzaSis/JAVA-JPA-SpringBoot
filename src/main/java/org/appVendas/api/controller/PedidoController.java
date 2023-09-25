@@ -1,10 +1,12 @@
 package org.appVendas.api.controller;
 
+import org.appVendas.api.dto.AtualizacaoStatusPedidoDTO;
 import org.appVendas.api.dto.InformacaoItemPedidoDTO;
 import org.appVendas.api.dto.InformacoesPedidoDTO;
 import org.appVendas.api.dto.PedidoDTO;
 import org.appVendas.domain.entity.ItemPedido;
 import org.appVendas.domain.entity.Pedido;
+import org.appVendas.domain.enums.StatusPedido;
 import org.appVendas.service.PedidoService;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.*;
@@ -42,6 +44,14 @@ public class PedidoController {
                         new ResponseStatusException(NOT_FOUND, "Pedido não encontrado."));
     }
 
+    @PatchMapping("{id}")
+    @ResponseStatus(NO_CONTENT)
+    public void updateStatus(@PathVariable Integer id ,
+                             @RequestBody AtualizacaoStatusPedidoDTO dto){
+        String novoStatus = dto.getNovoStatus();
+        service.atualizaStatus(id, StatusPedido.valueOf(novoStatus));
+    }
+
     private InformacoesPedidoDTO converter(Pedido pedido){
         return InformacoesPedidoDTO
                 .builder()
@@ -50,7 +60,7 @@ public class PedidoController {
                 .cpf(pedido.getCliente().getCpf())
                 .nomeCliente(pedido.getCliente().getNome())
                 .total(pedido.getTotal())
-//                .status(pedido.getStatus().name())
+                .status(pedido.getStatus().name())
                 .items(converter(pedido.getItens()))
                 .build();
     }
