@@ -32,26 +32,23 @@ public class ClienteController {
 
     @DeleteMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public Void deleteClienteById(@PathVariable Integer id){
+    public void deleteClienteById(@PathVariable Integer id){
         clientes.findById(id)
                 .map( cliente -> {
                     clientes.delete(cliente );
                     return cliente;
                 }).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado") );
-
-        return null;
     }
 
     @PutMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public Void update( @PathVariable Integer id, @RequestBody Cliente cliente ){
+    public void update( @PathVariable Integer id, @RequestBody Cliente cliente ){
         clientes.findById(id)
                 .map( clienteExistente -> {
                     cliente.setId(clienteExistente.getId());
                     clientes.save(cliente);
                     return clienteExistente;
                 }).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado") );
-        return null;
     }
 
     @GetMapping
