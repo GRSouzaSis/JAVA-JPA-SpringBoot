@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f38cfb1-2e32-49ab-b708-9f4bba3608e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/api/controller/UsuarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/domain/entity/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/domain/repository/UsuarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/service/impl/UsuarioServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/api/dto/CredenciaisDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/api/dto/TokenDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/exception/SenhaInvalidaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/security/jwt/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/security/jwt/JwtService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/appVendas/api/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/api/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/appVendas/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/appVendas/service/impl/UsuarioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/service/impl/UsuarioServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
