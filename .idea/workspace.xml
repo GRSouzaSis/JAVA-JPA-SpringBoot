@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f38cfb1-2e32-49ab-b708-9f4bba3608e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/config/InternacionalizacaoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/validation/NotEmptyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/validation/constraintvalidation/NotEmptyListValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/api/controller/UsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/domain/entity/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/domain/repository/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/service/impl/UsuarioServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/appVendas/api/ApiErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/api/ApiErrors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/appVendas/api/controller/ApplicationControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/api/controller/ApplicationControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/appVendas/api/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/api/controller/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/appVendas/api/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/api/controller/PedidoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/appVendas/api/controller/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/api/controller/ProdutoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/appVendas/api/dto/PedidoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/api/dto/PedidoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/appVendas/domain/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/domain/entity/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/appVendas/domain/entity/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/appVendas/domain/entity/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
